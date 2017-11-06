@@ -1,0 +1,451 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ecf0f1;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section {
+	margin-top: 150px;
+}
+
+.home-img img {
+	width: 50%;
+	height: 40%;
+	margin: 5% 25% 15% 25%;
+}
+
+nav img {
+	width: 160px;
+    top: 7.5%;
+    margin-left: 75%;
+	position: absolute;
+}
+
+nav {
+	top: 0;
+	position: fixed;
+	border-bottom: 2px solid #3498db;
+	background: #333;
+	height: 4em;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1.4em 2em;
+    text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #fff;
+}
+
+nav ul li a:hover {
+	color: #3498db;
+	transition: 0.4s ease-in;
+	background-color: #444;
+}
+
+nav ul li a:active {
+	border-bottom: 2px solid #3498db;
+}
+
+.ativo {
+	background-color: #444;
+}
+
+footer {
+	clear: both;
+	background: #333;
+	height: 3em;
+	width: 100%;
+	margin-top: 3%;
+	padding-top: 2em;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+}
+
+/***************** HOME *****************/
+.botaoingles {
+    float: right;
+    margin: 0 10% 0 0; 
+    padding: 5px 8px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#sobre {
+    margin: 0 10% 0 10%;
+}
+
+#sobre h1 {
+    font-size: 3em;
+    color: #3498db;
+}
+
+#sobre img {
+    float: left;
+    margin: 2% 2% 0 0;
+}
+
+#sobre p {
+    text-align: justify;
+    margin: 6% 0 0 0;
+    text-indent: 3%;
+}
+
+
+#sobre p:last-child {
+    margin: 0 0 5% 0;
+}
+
+
+
+#SI {
+    margin: 0 10% 0 10%;
+}
+
+#SI h2 {
+    margin-top: 20%;
+    font-size: 3em;
+    color: #3498db;
+}
+
+#SI h3 {
+    margin-top: 3%;
+    color: #3498db;
+}
+
+#SI img {
+    text-align: center;
+    width: 30%;
+    margin: 2% 2% 0 0;
+    float: left;
+}
+
+#SI p {
+    margin: 4% 0 12% 0;
+    text-indent: 3%;
+    text-align: justify;
+}
+
+#SI ul {
+    margin: 0 0 0 2%;
+}
+
+#SI ul li {
+   list-style-type:circle;   
+}
+
+/***************** FACULDADE *****************/
+
+#faculdade {
+	margin: 0 4%;
+}
+
+#faculdade h2 {
+	margin-top: 3%; 
+}
+
+#faculdade h4 {
+	margin-bottom: 2%; 
+}
+
+#faculdade p {
+	text-indent: 3%;
+    text-align: justify;
+}
+
+#faculdade h3 {
+	margin-top: 2%;
+}
+
+#faculdade.img_h3 {
+	margin-bottom: 1%;
+}
+
+#faculdade figure {
+	margin: 2% 1% 2% 1%;
+	width: 250px;
+	height: 200px;
+	border: 2px outset #fff;
+	padding: 1%;
+	float: left;
+}
+
+#faculdade figure img {
+	width: 100%;
+	height: 90%;
+}
+
+#faculdade figure figcaption {
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 2%;
+}
+
+/***************** MATÉRIAS *****************/
+
+#materias {
+	margin: 0 4%;
+}
+
+#materias h2 {
+	margin-top: 3%; 
+}
+
+#materias h3 {
+    margin: 3% 0 0 0;
+}
+
+#materias h4 {
+	margin-bottom: 2%; 
+}
+
+#materias button.botao {
+    background-color: #ecf0f1;
+    cursor: pointer;
+    padding: 2%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transform: 0.4s;
+    margin: 1% 0 0 0;
+}
+
+
+#materias button.botao.active,
+#materias button.botao:hover {
+
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+#materias button.botao:after {
+
+/* (+) = \02795 */ 
+
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin: 0 0 0 -1% 5px;
+}
+
+
+#materias button.botao.active:after {
+
+/* (-) = \2796 */ 
+
+    content: "\2796";
+}
+
+
+#materias div.panel {
+    padding: 0 2%;
+    background: #333;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    color: #fff;
+    
+}
+
+#materias div.panel.show {
+    opacity: 1;
+    max-height: 100%;
+    margin-top: -1%;
+}
+
+#materias div.panel p {
+	margin: 0 0 1% 0;
+    text-indent: 3%;
+    text-align: justify;
+}
+
+#materias figure {
+    margin: 2% 1% 2% 1%;
+	width: 250px;
+	height: 200px;
+	border: 2px outset #fff;
+	padding: 1%;
+	float: left;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+#materias figure figcaption {
+    text-align: center;
+	font-weight: bolder;
+	margin-bottom: 5%;
+    color: #333;
+}
+
+#materias figure img {
+    width: 80%;
+	height: 80%;
+}
+
+#materias figure img.pinguim {
+    width: 100%;
+	height: 80%;
+}
+
+#materias figure.alg {
+    width: 400px;
+	height: 250px;
+}
+
+#materias figure img.padroesimg {
+    width: 170px;
+    height: 135px;
+    margin-top: 15px;
+}
+
+#materias figure.criacaoneto {
+    margin: 2% 1% 2% 1%;
+	width: 450px;
+	height: 300px;
+	border: 2px outset #fff;
+	padding: 0.5%;
+	float: left;
+    background: #ecf0f1;
+    text-align: center;
+    
+}
+
+#materias figure.criacaoneto img {
+    width: 400px;
+}
+
+#materias .basesnet {
+    margin: 0 0 2% 5%;
+}
+
+
+#materias #exalg {
+    clear: both;
+    text-indent: 0;
+    margin: 0 0 5% 4%;
+}
+
+#materias #exalg h3 {
+    margin-bottom: 2%;
+}
+
+#materias .titulo {
+    text-align: center;
+    margin: 5% 0 5% 0;
+}
+
+#materias .texto {
+    margin: 0 20%;
+    line-height: 25px;
+}
+
+#materias .texto p:last-child {
+    margin-bottom: 5%;
+}
+
+hr {
+    margin: 4% 0;
+}
+
+#materias a:link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#materias a:visited {
+    color: #3498db;
+}
+
+#materias a:active {
+    color: #fff;
+}
+
+
+
+/***************** CONTATO *****************/
+
+#contato #curriculo {
+    float: left;
+    text-align: center;
+    margin: 0 10% 3% 10%;
+    padding: 2%;
+    border: 2px outset #fff;
+}
+
+#contato #curriculo h2 {
+    margin-bottom: 20px;
+}
+
+#contato #curriculo h3 {
+    margin: 15px 0 5px 0;
+}
+
+#contato #curriculo p:not(.pequeno) {
+    padding-top: 8px;
+}
+
+#contato #curriculo p.pequeno {
+    padding-top: px;
+    font-size: 0.9em;
+}
+
+#contato .inline {
+    display: inline-block;
+}
+
+#contato fieldset {
+    width: 360px;
+    padding: 5px 15px;
+    margin: 0 10%;
+    border: none;
+}
+
+#contato fieldset legend {
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #3498db;
+}
+
+#contato input, textarea {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#contato input, textarea, select {
+    display: block;
+    margin: 5px 0 20px 0;
+}
+
