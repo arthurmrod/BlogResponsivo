@@ -6,89 +6,91 @@
 }
 
 body {
-	background: #ecf0f1;
-	font-family: 'Montserrat', sans-serif;
+    background: #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
 }
 
 section {
-	margin-top: 150px;
+    margin-top: 150px;
 }
 
 .home-img img {
-	width: 50%;
-	height: 40%;
-	margin: 5% 25% 15% 25%;
+    width: 50%;
+    height: 40%;
+    margin: 5% 25% 15% 25%;
 }
 
 nav img {
-	width: 160px;
+    width: 160px;
     top: 7.5%;
     margin-left: 75%;
-	position: absolute;
+    position: absolute;
 }
 
 nav {
-	top: 0;
-	position: fixed;
-	border-bottom: 2px solid #3498db;
-	background: #333;
-	height: 4em;
-	width: 100%;
+    top: 0;
+    position: fixed;
+    border-bottom: 2px solid #3498db;
+    background: #333;
+    height: 4em;
+    width: 100%;
 }
 
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
     overflow: hidden;
 }
 
 nav ul li {
-	float: left;
+    float: left;
 }
 
 nav ul li a {
-	display: block;
+    display: block;
     color: #fff;
     text-align: center;
     padding: 1.4em 2em;
     text-decoration: none;
 }
 
-nav ul li a:link, nav ul li a:visited {
-	color: #fff;
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
 }
 
 nav ul li a:hover {
-	color: #3498db;
-	transition: 0.4s ease-in;
-	background-color: #444;
+    color: #3498db;
+    transition: 0.4s ease-in;
+    background-color: #444;
 }
 
 nav ul li a:active {
-	border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #3498db;
 }
 
 .ativo {
-	background-color: #444;
+    background-color: #444;
 }
 
 footer {
-	clear: both;
-	background: #333;
-	height: 3em;
-	width: 100%;
-	margin-top: 3%;
-	padding-top: 2em;
+    clear: both;
+    background: #333;
+    height: 3em;
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 2em;
 }
 
 footer p {
-	text-align: center;
-	color: #fff;
+    text-align: center;
+    color: #fff;
 }
 
 /***************** HOME *****************/
+
 .botaoingles {
     float: right;
-    margin: 0 10% 0 0; 
+    margin: 0 10% 0 0;
     padding: 5px 8px;
     background: #3498db;
     color: #fff;
@@ -158,60 +160,60 @@ footer p {
 }
 
 #SI ul li {
-   list-style-type:circle;   
+    list-style-type: circle;
 }
 
 /***************** FACULDADE *****************/
 
 #faculdade {
-	margin: 0 4%;
+    margin: 0 4%;
 }
 
 #faculdade h2 {
-	margin-top: 3%; 
+    margin-top: 3%;
 }
 
 #faculdade h4 {
-	margin-bottom: 2%; 
+    margin-bottom: 2%;
 }
 
 #faculdade p {
-	text-indent: 3%;
+    text-indent: 3%;
     text-align: justify;
 }
 
 #faculdade h3 {
-	margin-top: 2%;
+    margin-top: 2%;
 }
 
 #faculdade figure {
-	margin: 2% 1% 2% 1%;
-	width: 250px;
-	height: 200px;
-	border: 2px outset #fff;
-	padding: 1%;
-	float: left;
+    margin: 2% 1% 2% 1%;
+    width: 250px;
+    height: 200px;
+    border: 2px outset #fff;
+    padding: 1%;
+    float: left;
 }
 
 #faculdade figure img {
-	width: 100%;
-	height: 90%;
+    width: 100%;
+    height: 90%;
 }
 
 #faculdade figure figcaption {
-	text-align: center;
-	font-weight: bolder;
-	margin-bottom: 2%;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2%;
 }
 
 /***************** MATÉRIAS *****************/
 
 #materias {
-	margin: 0 4%;
+    margin: 0 4%;
 }
 
 #materias h2 {
-	margin-top: 3%; 
+    margin-top: 3%;
 }
 
 #materias h3 {
@@ -219,7 +221,7 @@ footer p {
 }
 
 #materias h4 {
-	margin-bottom: 2%; 
+    margin-bottom: 2%;
 }
 
 #materias button.botao {
@@ -247,8 +249,7 @@ footer p {
 
 #materias button.botao:after {
 
-/* (+) = \02795 */ 
-
+    /* (+) = \02795 */
     content: '\02795';
     font-size: 13px;
     color: #777;
@@ -259,8 +260,7 @@ footer p {
 
 #materias button.botao.active:after {
 
-/* (-) = \2796 */ 
-
+    /* (-) = \2796 */
     content: "\2796";
 }
 
@@ -273,7 +273,7 @@ footer p {
     transition: 0.6s ease-in-out;
     opacity: 0;
     color: #fff;
-    
+
 }
 
 #materias div.panel.show {
@@ -283,7 +283,7 @@ footer p {
 }
 
 #materias div.panel p {
-	margin: 0 0 1% 0;
+    margin: 0 0 1% 0;
     text-indent: 3%;
     text-align: justify;
 }
@@ -294,35 +294,35 @@ footer p {
 
 #materias figure {
     margin: 2% 1% 2% 1%;
-	width: 250px;
-	height: 200px;
-	border: 2px outset #fff;
-	padding: 1%;
-	float: left;
+    width: 250px;
+    height: 200px;
+    border: 2px outset #fff;
+    padding: 1%;
+    float: left;
     background: #ecf0f1;
     text-align: center;
 }
 
 #materias figure figcaption {
     text-align: center;
-	font-weight: bolder;
-	margin-bottom: 5%;
+    font-weight: bolder;
+    margin-bottom: 5%;
     color: #333;
 }
 
 #materias figure img {
     width: 80%;
-	height: 80%;
+    height: 80%;
 }
 
 #materias figure img.pinguim {
     width: 100%;
-	height: 80%;
+    height: 80%;
 }
 
 #materias figure.alg {
     width: 400px;
-	height: 250px;
+    height: 250px;
 }
 
 #materias figure img.padroesimg {
@@ -333,14 +333,14 @@ footer p {
 
 #materias figure.criacaoneto {
     margin: 2% 1% 2% 1%;
-	width: 450px;
-	height: 300px;
-	border: 2px outset #fff;
-	padding: 0.5%;
-	float: left;
+    width: 450px;
+    height: 300px;
+    border: 2px outset #fff;
+    padding: 0.5%;
+    float: left;
     background: #ecf0f1;
     text-align: center;
-    
+
 }
 
 #materias figure.criacaoneto img {
@@ -441,13 +441,73 @@ hr {
     color: #3498db;
 }
 
-#contato input, textarea {
+#contato input,
+textarea {
     padding: 5px;
     border-radius: 4px;
 }
 
-#contato input, textarea, select {
+#contato input,
+textarea,
+select {
     display: block;
     margin: 5px 0 20px 0;
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
+
 
