@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Contato - Arthur Rodrigues</title>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	</head>
-	<body>
-		<section>
-			<nav>
-				<ul>
-					<li tabindex="1" title="Arthur Rodrigues"><a href="index.html">Home</a></li>
-					<li tabindex="2" title="Fatec Jales"><a href="faculdade.html">Instituição</a></li>
-					<li tabindex="3" title="Matérias"><a href="materias.html">Matérias</a></li>
-					<li class="ativo" tabindex="4" title="Contato"><a href="contato.html">Contato</a></li>
-				</ul>
 
-				<img src="imagens/logo_branco.png" alt="Logo" title="Logo">
-				
-			</nav>
+<head>
+    <title>Contato - Arthur Rodrigues</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="js/responsive-nav.js"></script>
+</head>
 
-            <article id="contato">
-                <div id="curriculo">
-                    
-                    <h2>Currículo</h2>
-                    <p>Nome: Arthur Mendonça Rodrigues</p>
-                    <p>E-mail: arthur.rodrigues3@fatec.sp.gov.br</p>
-                    <p>Telefone: (17) 99656-8516</p>
-                    
-                    <h3>Educação</h3>
-                    <p>Centro Educacional Castilho Santos - COC Jales</p>
-                    <p class="pequeno">Conclusão: 2016</p>
-                    <p>Faculdade de Tecnologia de Jales - FATEC Jales</p>
-                    <p class="pequeno">Inicio: 2017</p>
-                    <p class="pequeno">Curso em andamento</p>
-                    
-                    <h3>Experiência</h3>
-                    <p>Delegacia de Polícia de Santa Albertina</p>
-                    <p>Rua Armindo Pilhalarme, 710, Centro - Santa Albertina/SP</p>
-                    <p>Cargo: Auxiliar de escritório</p>
-                    <p class="pequeno">Período: 03 de março de 2014 à 03 de março de 2016</p>
-                    
-                    <h3>Formação complementar</h3>
-                    <p>Curso → Futuro do Amanhã: Capacitando e Aprendendo</p>
-                    <p class="pequeno">Carga horária: <br/> 
-                                        672 horas - 2014 <br/>
-                                        584 horas - 2015</p>
-                    <p>Curso → Informática Básica - Fênix Informática</p>
-                    <p class="pequeno">Duração: 1 ano</p>
-                </div>
-                
-                <form method="post" action="#">
-                    <fieldset>
-                        <legend>Entre em contato</legend>
+<body>
+    <header>
+        <a href="index.html" class="logo" data-scroll>Menu</a>
+        <nav class="nav-collapse">
+            <ul>
+                <li class="menu-item active"><a href="index.html" data-scroll>Home</a></li>
+                <li class="menu-item"><a href="faculdade.html" data-scroll>Instituição</a></li>
+                <li class="menu-item"><a href="materias.html" data-scroll>Matérias</a></li>
+                <li class="menu-item active"><a href="contato.html" data-scroll>Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article id="contato">
+            <div id="curriculo">
 
-                        <label for="nome">Nome completo: </label>
-                        <input type="text" id="nome" name="nome" maxlenght="40" size="45"/>
-                        
-                        <label for="email">E-mail: </label>
-                        <input type="email" id="email" size="45"/>
-                        
-                        <label for="tel">Telefone: </label>
-                        <input type="tel" id="tel" size="45" placeholder="(99) 99999-9999"/>
-                        
-                        <label for="sexo">Sexo: </label>
-                        <select id="sexo">
+                <h2>Currículo</h2>
+                <p>Nome: Arthur Mendonça Rodrigues</p>
+                <p>E-mail: arthur.rodrigues3@fatec.sp.gov.br</p>
+                <p>Telefone: (17) 99656-8516</p>
+
+                <h3>Educação</h3>
+                <p>Centro Educacional Castilho Santos - COC Jales</p>
+                <p class="pequeno">Conclusão: 2016</p>
+                <p>Faculdade de Tecnologia de Jales - FATEC Jales</p>
+                <p class="pequeno">Inicio: 2017</p>
+                <p class="pequeno">Curso em andamento</p>
+
+                <h3>Experiência</h3>
+                <p>Delegacia de Polícia de Santa Albertina</p>
+                <p>Rua Armindo Pilhalarme, 710, Centro - Santa Albertina/SP</p>
+                <p>Cargo: Auxiliar de escritório</p>
+                <p class="pequeno">Período: 03 de março de 2014 à 03 de março de 2016</p>
+
+                <h3>Formação complementar</h3>
+                <p>Curso → Futuro do Amanhã: Capacitando e Aprendendo</p>
+                <p class="pequeno">Carga horária: <br/> 672 horas - 2014 <br/> 584 horas - 2015</p>
+                <p>Curso → Informática Básica - Fênix Informática</p>
+                <p class="pequeno">Duração: 1 ano</p>
+            </div>
+
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Entre em contato</legend>
+
+                    <label for="nome">Nome completo: </label>
+                    <input type="text" id="nome" name="nome" maxlenght="40" size="45" />
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" size="45" />
+
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" id="tel" size="45" placeholder="(99) 99999-9999" />
+
+                    <label for="sexo">Sexo: </label>
+                    <select id="sexo">
                             <option value="massculino">Masculino</option>
                             <option value="feminino">Feminino</option>
                         </select>
-                        
-                        <label for="comentario">Comentário: </label>
-                        <textarea id="comentario" cols="47" rows="8" placeholder="Deixe um comentário"></textarea>
-                        
-                        <input class="inline btnform" type="reset" value="Limpar"/>
-                        <input class="inline btnform" type="submit" value="Enviar"/>
-                    </fieldset>
-                </form>
-            </article>
 
-			<footer>
-				<p>Copyright &copy; Arthur Rodrigues - Todos os direitos reservados.</p>
-			</footer>
-		</section>
-	</body>
+                    <label for="comentario">Comentário: </label>
+                    <textarea id="comentario" cols="47" rows="8" placeholder="Deixe um comentário"></textarea>
+
+                    <input class="inline btnform" type="reset" value="Limpar" />
+                    <input class="inline btnform" type="submit" value="Enviar" />
+                </fieldset>
+            </form>
+        </article>
+
+        <footer>
+            <p>Copyright &copy; Arthur Rodrigues - Todos os direitos reservados.</p>
+        </footer>
+    </section>
+    
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+</body>
+
 </html>

@@ -14,65 +14,6 @@ section {
     margin-top: 150px;
 }
 
-.home-img img {
-    width: 50%;
-    height: 40%;
-    margin: 5% 25% 15% 25%;
-}
-
-nav img {
-    width: 160px;
-    top: 7.5%;
-    margin-left: 75%;
-    position: absolute;
-}
-
-nav {
-    top: 0;
-    position: fixed;
-    border-bottom: 2px solid #3498db;
-    background: #333;
-    height: 65px;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-    background: #333;
-}
-
-nav ul li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1.4em 2em;
-    text-decoration: none;
-}
-
-nav ul li a:link,
-nav ul li a:visited {
-    color: #fff;
-}
-
-nav ul li a:hover {
-    color: #3498db;
-    transition: 0.4s ease-in;
-    background-color: #444;
-}
-
-nav ul li a:active {
-    border-bottom: 2px solid #3498db;
-}
-
-.ativo {
-    background-color: #444;
-}
-
 footer {
     clear: both;
     background: #333;
@@ -106,6 +47,7 @@ footer p {
 }
 
 #sobre h1 {
+    margin-top: 5%;
     font-size: 3em;
     color: #3498db;
 }
@@ -483,47 +425,58 @@ select {
     display: none;
 }
 
-@media only screen and (max-width: 800px) {
-    #faculdade figure {
-        width: 300px;
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 125%;
     }
-}
+    #sobre h1 {
+        margin-top: 20%;
+    }
 
-@media only screen and (max-width: 350px) {
-    #faculdade figure {
-        width: 250px;
+    #sobre figure img,
+    #SI figure img {
+        width: 150px;
     }
+    
+    #materias .texto {
+        margin: 0 2%;
+        line-height: 25px;
+    }
+
+    #faculdade figure {
+        width: 90%;
+    }
+
     #sobre img {
         width: 250px;
     }
-    
+
     #SI img {
         width: 250px;
     }
-    
+
     #curriculo {
-        width: 250px;
+        width: 315px;
         font-size: 14px;
     }
-    
+
     .btnform {
         width: 70px;
     }
-    
-    input, textarea {
-        width: 220px;
+
+    input,
+    textarea {
+        width: 275px;
     }
-    
-    fieldset{
+
+    fieldset {
         width: 200px;
     }
-    
+
     #contato fieldset legend {
         margin: 0 0 5px 0;
-        font-size: 15px;
+        font-size: 24px;
+        text-align: left;
     }
-    
+
 }
-
-
-
