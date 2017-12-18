@@ -32,7 +32,7 @@ nav {
     position: fixed;
     border-bottom: 2px solid #3498db;
     background: #333;
-    height: 4em;
+    height: 65px;
     width: 100%;
 }
 
@@ -43,6 +43,7 @@ nav ul {
 
 nav ul li {
     float: left;
+    background: #333;
 }
 
 nav ul li a {
